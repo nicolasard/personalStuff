@@ -1,0 +1,32 @@
+### Personal stuff
+This pretend to be a personal guide about how to setup a new development environment. I think that for this things it's cool to don't use autoinstallers.
+
+**Profile of the developer:** A guy running windows 7/10, who wants to deploy in Java for backend using Maven or Gradle. And for frontend wants to use Node with NPM.
+
+Don't use installers if you can. (This it's going to help you if you don't have admin/root privileges in your computer. )
+
+#### Brief of the software i use:
+| Application/Tool | Description |
+| --- | --- |
+| Java JDK | Lastly i'm developing in java 1.8 but this guide could apply to whatever version. |
+| Maven    | Package manager for java                                                          |
+| Gradle   | A new package manager for java                                                    |
+| MobaXTerm | A very good tool for windows local console, and ssh client |
+
+
+### Download the tools and setup the environment.
+I use to download all the software in **C:\E\tools\** but you can download the binaries wherever you want.
+
+##### The setenv.bat script
+This script to set a the environment.
+
+```bash
+@ECHO OFF
+echo SETTING UP ENVIRONMENT VARIABLES
+
+SET JAVA_HOME=E:\tools\java\jdk1.7.0_67
+SET JRE_HOME=E:\tools\java\jdk1.7.0_67
+
+SET PATH=%Path%;%MAVEN_HOME%\bin;%ANT_HOME%\bin;%JAVA_HOME%\bin;%CATALINA_HOME%;%CATALINA_BASE%
+
+```
