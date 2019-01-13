@@ -27,6 +27,16 @@ echo SETTING UP ENVIRONMENT VARIABLES
 SET JAVA_HOME=E:\tools\java\jdk1.7.0_67
 SET JRE_HOME=E:\tools\java\jdk1.7.0_67
 
-SET PATH=%Path%;%MAVEN_HOME%\bin;%ANT_HOME%\bin;%JAVA_HOME%\bin;%CATALINA_HOME%;%CATALINA_BASE%
+SET PATH=%MAVEN_HOME%\bin;%ANT_HOME%\bin;%JAVA_HOME%\bin;%CATALINA_HOME%;%CATALINA_BASE%;%Path%
 
+```
+
+
+#### Additional: Linux env
+
+This setEnv.sh script  
+```bash
+JDK_HOME=/path/to/jre/jre6
+
+export PATH=$JDK_HOME/bin:$PATH
 ```
