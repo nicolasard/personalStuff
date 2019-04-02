@@ -48,5 +48,39 @@ export PATH=$JDK_HOME/bin:$PATH
 ```
 
 #### Making a Debian Linux init.d service script
-I used this fabolous [this](https://debian-administration.org/article/28/Making_scripts_run_at_boot_time_with_Debian) fabolous guid from Debian.
-Let's say that we have a 
+I used this fabolous [this](https://debian-administration.org/article/28/Making_scripts_run_at_boot_time_with_Debian) fabulous guide from Debian.
+
+(!) IMPORTANT ACLARATION: If we don't put the BEGIN/END INIT INFO the command update-rc.d will not update the symbolic link to our /etc/init.d/jenkins file, and also will don't trigger any error (I hate for some seconds the developers of the command :P )
+
+```bash
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:  Jenkins
+# Required-Start:    $local_fs $remote_fs $network $syslog $named
+# Required-Stop:     $local_fs $remote_fs $network $syslog $named
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: starts Jenkins
+# Description:       starts Jenkins using start-stop-daemon
+### END INIT INFO
+
+# Jenkins init.d start script
+
+SERVICE_NAME=Jenkins
+JDK_HOME=/home/nardison/base/jdk1.8.0_144
+
+export PATH=$JDK_HOME/bin:$PATH
+
+case "$1" in
+start)
+                log_daemon_msg "Starting Jenkins"
+                nohup java -jar /home/nardison/base/jenkins.war &> /home/nardison/base/jenkins.log
+        ;;
+stop)
+                log_daemon_msg "Stoping Jenkins"
+        ;;
+esac
+
+exit 0
+```
+
