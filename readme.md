@@ -1,10 +1,12 @@
-### Some Sub Pages
+## Personal Stuff Pages :triangular_flag_on_post:
+
+### Some sub-pages/guides
  1. [ReactJs](https://github.com/nicolasard/personalStuff/blob/master/reactJs.md)
  2. [Grafana](https://github.com/nicolasard/personalStuff/blob/master/Grafana.md)
  3. [Salt](https://github.com/nicolasard/personalStuff/blob/master/Salt.md)
  4. [Kubernates](https://github.com/nicolasard/personalStuff/blob/master/Kubernates.md) 
 
-### Personal stuff
+### Initial guide for developers
 This pretend to be a personal guide about how to setup a new development environment. I think that for this things it's cool to don't use autoinstallers.
 
 **Profile of the developer:** A guy running windows 7/10, who wants to deploy in Java for backend using Maven or Gradle. And for frontend wants to use Node with NPM.
