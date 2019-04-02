@@ -51,7 +51,7 @@ export PATH=$JDK_HOME/bin:$PATH
 #### Making a Debian Linux init.d service script
 I used this fabolous [this](https://debian-administration.org/article/28/Making_scripts_run_at_boot_time_with_Debian) fabulous guide from Debian. In my example I'm putting the jenkins stand alone war to run at server startup.
 
-(!) IMPORTANT ACLARATION: If we don't put the BEGIN/END INIT INFO the command update-rc.d will not update the symbolic link to our /etc/init.d/jenkins file, and also will don't trigger any error (I hate for some seconds the developers of the command :P )
+:exclamation: IMPORTANT ACLARATION: If we don't put the BEGIN/END INIT INFO the command update-rc.d will not update the symbolic link to our /etc/init.d/jenkins file, and also will don't trigger any error (I hate for some seconds the developers of the command :yum: )
 
 ```bash
 #!/bin/sh
