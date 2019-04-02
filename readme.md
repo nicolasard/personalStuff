@@ -45,3 +45,7 @@ JDK_HOME=/path/to/jre/jre6
 
 export PATH=$JDK_HOME/bin:$PATH
 ```
+
+#### Making a Debian Linux init.d service script
+I used this fabolous [this](https://debian-administration.org/article/28/Making_scripts_run_at_boot_time_with_Debian) fabolous guid from Debian.
+Let's say that we have a 
