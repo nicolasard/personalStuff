@@ -1,7 +1,8 @@
 ### Some Sub Pages
  1. [ReactJs](https://github.com/nicolasard/personalStuff/blob/master/reactJs.md)
- 2. [Salt](https://github.com/nicolasard/personalStuff/blob/master/Salt.md)
- 3. [Kubernates](https://github.com/nicolasard/personalStuff/blob/master/Kubernates.md) 
+ 2. [Grafana](https://github.com/nicolasard/personalStuff/blob/master/Grafana.md)
+ 3. [Salt](https://github.com/nicolasard/personalStuff/blob/master/Salt.md)
+ 4. [Kubernates](https://github.com/nicolasard/personalStuff/blob/master/Kubernates.md) 
 
 ### Personal stuff
 This pretend to be a personal guide about how to setup a new development environment. I think that for this things it's cool to don't use autoinstallers.
