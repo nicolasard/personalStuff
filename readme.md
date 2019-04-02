@@ -1,4 +1,4 @@
-## Personal Stuff Pages :triangular_flag_on_post:
+## :triangular_flag_on_post: Personal Stuff Pages 
 
 ### Some sub-pages/guides
  1. [ReactJs](https://github.com/nicolasard/personalStuff/blob/master/reactJs.md)
