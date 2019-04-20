@@ -5,6 +5,7 @@ This are my notes about the aventure of compiling Apache2. The most used webserv
 ### Environment
 SO: Debian GNU/Linux 9.1 (stretch)
 
+### Compiling and runing a fresh new Apache2 Server
 1. Install dependencies.
 ```
 apt-get install libapr1-dev libaprutil1-dev 
@@ -15,6 +16,8 @@ apt-get install libpcre3-dev
 ```
 wget http://apache.dattatec.com//httpd/httpd-2.4.39.tar.gz 
 ```
+
+### Configuration
 
 ### Plus! Jenkins file to compile the app
 ```
