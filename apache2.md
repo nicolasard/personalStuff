@@ -1,8 +1,8 @@
-##Apache2
+## Apache2
 
 This are my notes about the aventure of compiling Apache2. The most used webserver.
 
-###Environment
+### Environment
 SO: Debian GNU/Linux 9.1 (stretch)
 
 1. Install dependencies.
