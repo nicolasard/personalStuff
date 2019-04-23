@@ -18,6 +18,16 @@ wget http://apache.dattatec.com//httpd/httpd-2.4.39.tar.gz
 ```
 
 ### Configuration
+The apache configuration it's in the file /apache2/conf/httpd.conf. 
+
+To reload the configuration without restart the server run 
+```
+/apache2/bin/apachectl -k graceful
+```
+You can test the config syntax running 
+```
+/apache2/bin/apachectl configtest
+```
 
 ### Plus! Jenkins file to compile the app
 ```
