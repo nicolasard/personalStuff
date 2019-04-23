@@ -16,6 +16,13 @@ apt-get install libpcre3-dev
 ```
 wget http://apache.dattatec.com//httpd/httpd-2.4.39.tar.gz 
 ```
+3. Configure 
+```
+./configure --prefix=/opt/apache2/
+```
+4. Make 
+
+5. Install
 
 ### Configuration
 The apache configuration it's in the file /apache2/conf/httpd.conf. 
