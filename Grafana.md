@@ -22,6 +22,7 @@ Download the linux binary from InfluxData https://portal.influxdata.com/download
 Influx DB it's like a SQL database for time series. 
 
 >Conceptually you can think of a measurement as an SQL table, where the primary index is always time. tags and fields are effectively >columns in the table. tags are indexed, and fields are not. The difference is that, with InfluxDB, you can have millions of >measurements, you don’t have to define schemas up-front, and null values aren’t stored.
+>
 ><cite> From getting started guide https://docs.influxdata.com/influxdb/v1.7/introduction/getting-started/</cite>
 
 ```bash
