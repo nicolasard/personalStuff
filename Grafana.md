@@ -4,7 +4,7 @@ Ass you know I love install standalone applications, so this will be my guid abo
 
 *Environment:* Virtualiced Debian Linux
 
-1. Download Grafana from https://grafana.com/grafana/download
+1. Download Grafana binaries from https://grafana.com/grafana/download
 
 2. 
 
@@ -19,3 +19,13 @@ Grana needs a "Data Source" that it's used to show the data from. One good datas
 #### To install InfluxDB
 Download the linux binary from InfluxData https://portal.influxdata.com/downloads/ (Influx Data it's the company behind Influx)
 
+```
+# 1.) Download the Binary.
+wget https://dl.influxdata.com/influxdb/releases/influxdb-1.7.7_linux_amd64.tar.gz
+# 2.) Uncompress it.
+tar -zxvf influxdb-1.7.7_linux_amd64.tar.gz
+# 3.) Check the configuration.
+
+# Run Influx DB
+/var/bin/influxd
+```
