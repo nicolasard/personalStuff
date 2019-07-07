@@ -16,7 +16,7 @@ Grana needs a "Data Source" that it's used to show the data from. One good datas
 
 
 
-#### To install InfluxDB
+#### About InfluxDB
 Download the linux binary from InfluxData https://portal.influxdata.com/downloads/ (Influx Data it's the company behind Influx)
 
 Influx DB it's like a SQL database for time series. 
@@ -36,4 +36,16 @@ tar -zxvf influxdb-1.7.7_linux_amd64.tar.gz
 /var/bin/influxd
 ```
 
-##### Creating a demo
+#### About Telegraph
+
+```bash
+# 1.) Download the Binary.
+wget wget https://dl.influxdata.com/telegraf/releases/telegraf-1.11.1_linux_amd64.tar.gz
+# 2.) Uncompress it.
+tar -zxvf influxdb-1.7.7_linux_amd64.tar.gz
+# 3.) Configure it
+
+# 4.) Tun Telegraph
+/usr/bin/telegraph
+```
+
