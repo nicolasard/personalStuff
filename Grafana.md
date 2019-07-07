@@ -19,7 +19,7 @@ Grana needs a "Data Source" that it's used to show the data from. One good datas
 #### To install InfluxDB
 Download the linux binary from InfluxData https://portal.influxdata.com/downloads/ (Influx Data it's the company behind Influx)
 
-```
+```bash
 # 1.) Download the Binary.
 wget https://dl.influxdata.com/influxdb/releases/influxdb-1.7.7_linux_amd64.tar.gz
 # 2.) Uncompress it.
