@@ -19,13 +19,20 @@ Grana needs a "Data Source" that it's used to show the data from. One good datas
 #### To install InfluxDB
 Download the linux binary from InfluxData https://portal.influxdata.com/downloads/ (Influx Data it's the company behind Influx)
 
+Influx DB it's like a SQL database for time series. 
+
+>Conceptually you can think of a measurement as an SQL table, where the primary index is always time. tags and fields are effectively >columns in the table. tags are indexed, and fields are not. The difference is that, with InfluxDB, you can have millions of >measurements, you don’t have to define schemas up-front, and null values aren’t stored.
+> -- <cite>https://docs.influxdata.com/influxdb/v1.7/introduction/getting-started/</cite>
+
 ```bash
 # 1.) Download the Binary.
 wget https://dl.influxdata.com/influxdb/releases/influxdb-1.7.7_linux_amd64.tar.gz
 # 2.) Uncompress it.
 tar -zxvf influxdb-1.7.7_linux_amd64.tar.gz
 # 3.) Check the configuration.
-
-# Run Influx DB
+### TODO
+# 4.) Run Influx DB
 /var/bin/influxd
 ```
+
+##### Creating a demo
