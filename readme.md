@@ -7,6 +7,7 @@
  4. [Kubernates](https://github.com/nicolasard/personalStuff/blob/master/Kubernates.md) 
  5. [Apache2](https://github.com/nicolasard/personalStuff/blob/master/apache2.md) 
  6. [GIT](https://github.com/nicolasard/personalStuff/blob/master/git.md) 
+ 6. [VirtualBox](https://github.com/nicolasard/personalStuff/blob/master/virtualbox.md) 
 
 ### Initial guide for developers
 This pretend to be a personal guide about how to setup a new development environment. I think that for this things it's cool to don't use autoinstallers.
