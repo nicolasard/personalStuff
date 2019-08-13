@@ -11,3 +11,20 @@ In debian just apt-get install salt-master https://docs.saltstack.com/en/latest/
 ### Configuring the Salt minion
 Reading the Salt official configurartion about how to configure Salt https://docs.saltstack.com/en/latest/ref/configuration/index.html#configuring-salt
 
+It's a good idea to configure the minion with custom grains in the minions so we can filter them
+https://docs.saltstack.com/en/latest/topics/grains/
+
+Example of a minion config file
+
+```shell
+#file: /etc/salt/minion
+
+# Your salt master ip address.
+master: 192.168.0.247
+
+# The minion custom grains.
+grains:
+  roles:
+    - grafana
+    - samba
+```
