@@ -40,8 +40,8 @@ root@salt-minion:# /etc/init.d/salt-minion restart
 ### Targeting minions
 The simplest example it's target all the minions, for example for get all the grains
 ```shell
-root@saltmaster:/# salt '*' grains.items
-saltminion:
+root@salt-master:/# salt '*' grains.items
+salt-minion:
     ----------
     SSDs:
     biosreleasedate:
