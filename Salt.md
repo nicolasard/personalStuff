@@ -7,6 +7,7 @@ So for example if you have to install an apache in your new server. First instal
 In debian just apt-get install salt-master https://docs.saltstack.com/en/latest/topics/installation/debian.html#install-packages
 
 ### Installing Salt minions (aka client side)
+Also I nstalled in salt minion using apt-get install salt-minion.
 
 ### Configuring the Salt minion
 Reading the Salt official configurartion about how to configure Salt https://docs.saltstack.com/en/latest/ref/configuration/index.html#configuring-salt
@@ -28,3 +29,10 @@ grains:
     - grafana
     - samba
 ```
+We should restart salt minion in order to make the changes take effect 
+
+```
+root@salt-minion:# /etc/init.d/salt-minion restart
+```
+
+#### Adding salt minion in salt master
