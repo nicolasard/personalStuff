@@ -36,3 +36,22 @@ root@salt-minion:# /etc/init.d/salt-minion restart
 ```
 
 #### Adding salt minion in salt master
+
+### Targeting minions
+The simplest example it's target all the minions, for example for get all the grains
+```shell
+root@saltmaster:/# salt '*' grains.items
+saltminion:
+    ----------
+    SSDs:
+    biosreleasedate:
+        11/16/2016
+    biosversion:
+        F20
+    cpu_flags:
+        - fpu
+        - vme
+        - de
+#Output have been cuted
+```
+
