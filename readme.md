@@ -10,11 +10,11 @@
  6. [VirtualBox](https://github.com/nicolasard/personalStuff/blob/master/virtualbox.md) 
 
 ### Initial guide for developers
-This pretend to be a personal guide about how to setup a new development environment. I think that for this things it's cool to don't use autoinstallers.
+This pretends to be a personal guide about how to set up a new development environment. I think that for these things it's cool to don't use auto-installers.
 
-**Profile of the developer:** A guy running windows 7/10, who wants to deploy in Java for backend using Maven or Gradle. And for frontend wants to use Node with NPM.
+**Profile of the developer:** A guy running windows 7/10, who wants to deploy in Java for backend using Maven or Gradle. And for frontend wants to use Node with NPM.
 
-Don't use installers if you can. (This it's going to help you if you don't have admin/root privileges in your computer. )
+Don't use installers if you can. (This it's going to help you if you don't have admin/root privileges on your computer. )
 
 #### Brief of the software i use:
 | Application/Tool | Description |
