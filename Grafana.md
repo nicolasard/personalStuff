@@ -1,5 +1,6 @@
 ### Installing Grafana
 
+What's Grafana? Grafana it's a monitoring tool, it have alarms included (We don't use te alarm feature in my current work). An other cool tool like grana it's Chronograf (https://docs.influxdata.com/chronograf/v1.7/)
 Ass you know I love install standalone applications, so this will be my guid about how to install Grafana in a standalone.
 
 *Environment:* Virtualiced Debian Linux
@@ -11,8 +12,6 @@ Ass you know I love install standalone applications, so this will be my guid abo
 
 ### The complete overview to monitor a server
 Grana needs a "Data Source" that it's used to show the data from. One good datasource will be InfluxDB, a time series database. If you want to monitor the Ram memmory in different servers for example, this DB should be populated with a "Time series collector" like Telegraph.
-
-
 
 
 
@@ -38,6 +37,8 @@ tar -zxvf influxdb-1.7.7_linux_amd64.tar.gz
 
 #### About Telegraph
 
+Telegraph it's like a 
+
 ```bash
 # 1.) Download the Binary.
 wget wget https://dl.influxdata.com/telegraf/releases/telegraf-1.11.1_linux_amd64.tar.gz
@@ -48,4 +49,7 @@ tar -zxvf influxdb-1.7.7_linux_amd64.tar.gz
 # 4.) Tun Telegraph
 /usr/bin/telegraph
 ```
+#### About Kapacitor
+"Kapacitor is an open source data processing framework that makes it easy to create alerts, run ETL jobs and detect anomalies. Kapacitor is the final piece of the TICK stack." from https://docs.influxdata.com/kapacitor/v1.5/
+
 
