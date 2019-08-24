@@ -55,3 +55,9 @@ salt-minion:
 #Output have been cuted
 ```
 
+#### Writting state .sls
+State modules are located in /srv/salt/
+
+
+
+
