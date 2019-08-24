@@ -15,7 +15,7 @@ Reading the Salt official configurartion about how to configure Salt https://doc
 It's a good idea to configure the minion with custom grains in the minions so we can filter them
 https://docs.saltstack.com/en/latest/topics/grains/
 
-Example of a minion config file
+Example of a minion config file (You can also add, rack number, building, etc)
 
 ```shell
 #file: /etc/salt/minion
@@ -29,10 +29,13 @@ grains:
     - grafana
     - samba
 ```
-We should restart salt minion in order to make the changes take effect 
-
+We should restart salt minion in order to make the changes take effect.
 ```
 root@salt-minion:# /etc/init.d/salt-minion restart
+```
+To get all the roles from salt minions you should run the following command
+```
+root@salt-minion:# salt '*' grains.get roles
 ```
 
 #### Adding salt minion in salt master
