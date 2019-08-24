@@ -51,7 +51,7 @@ salt-minion-B:
 ### Targeting minions
 The simplest example it's target all the minions, for example for get all the grains
 ```shell
-root@salt-master:/# salt '*' grains.items
+root@salt-master:# salt '*' grains.items
 salt-minion:
     ----------
     SSDs:
