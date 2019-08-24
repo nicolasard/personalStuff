@@ -36,6 +36,14 @@ root@salt-minion:# /etc/init.d/salt-minion restart
 To get all the roles from salt minions you should run the following command
 ```
 root@salt-minion:# salt '*' grains.get roles
+salt-minion-A:
+    - saltmaster
+    - virtualbox
+salt-minion-B:
+    - grafana
+    - samba
+    - influxdb
+
 ```
 
 #### Adding salt minion in salt master
