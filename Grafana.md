@@ -53,4 +53,6 @@ tar -zxvf influxdb-1.7.7_linux_amd64.tar.gz
 #### About Kapacitor
 "Kapacitor is an open source data processing framework that makes it easy to create alerts, run ETL jobs and detect anomalies. Kapacitor is the final piece of the TICK stack." from https://docs.influxdata.com/kapacitor/v1.5/
 
+https://docs.influxdata.com/kapacitor/v1.5/introduction/getting-started/
+
 
