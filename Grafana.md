@@ -36,7 +36,7 @@ tar -zxvf influxdb-1.7.7_linux_amd64.tar.gz
 /var/bin/influxd
 ```
 
-#### About Telegraph
+#### About Telegraf
 
 Telegraph it's like a 
 
