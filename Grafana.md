@@ -38,7 +38,7 @@ tar -zxvf influxdb-1.7.7_linux_amd64.tar.gz
 
 #### About Telegraf
 
-Telegraph it's like a 
+Telegraf it's like a 
 
 ```bash
 # 1.) Download the Binary.
