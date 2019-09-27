@@ -46,7 +46,9 @@ wget wget https://dl.influxdata.com/telegraf/releases/telegraf-1.11.1_linux_amd6
 # 2.) Uncompress it.
 tar -zxvf influxdb-1.7.7_linux_amd64.tar.gz
 # 3.) Configure it
-
+Telefraf takes the config from a file in 
+  $TELEGRAF_CONFIG_PATH, /home/faloggs/.telegraf/telegraf.conf, or /etc/telegraf/telegraf.conf
+  
 # 4.) Tun Telegraph
 /usr/bin/telegraph
 ```
