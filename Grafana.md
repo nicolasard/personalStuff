@@ -49,8 +49,8 @@ tar -zxvf influxdb-1.7.7_linux_amd64.tar.gz
 Telefraf takes the config from a file in 
   $TELEGRAF_CONFIG_PATH, /home/faloggs/.telegraf/telegraf.conf, or /etc/telegraf/telegraf.conf
   
-# 4.) Tun Telegraph
-/usr/bin/telegraph
+# 4.) Run Telegraf
+/usr/bin/telegraf
 ```
 #### About Kapacitor
 "Kapacitor is an open source data processing framework that makes it easy to create alerts, run ETL jobs and detect anomalies. Kapacitor is the final piece of the TICK stack." from https://docs.influxdata.com/kapacitor/v1.5/
