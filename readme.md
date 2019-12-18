@@ -1,6 +1,8 @@
 ## :triangular_flag_on_post: Personal Stuff Pages 
 
 ### Some sub-pages/guides
+I started to document in some MarkDown pages my knowledge so it can go fast to what I learned before:
+
  1. [ReactJs](https://github.com/nicolasard/personalStuff/blob/master/reactJs.md)
  2. [Grafana](https://github.com/nicolasard/personalStuff/blob/master/Grafana.md)
  3. [Salt](https://github.com/nicolasard/personalStuff/blob/master/Salt.md)
