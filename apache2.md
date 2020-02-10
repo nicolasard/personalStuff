@@ -36,6 +36,9 @@ You can test the config syntax running
 /apache2/bin/apachectl configtest
 ```
 
+## Using apache as a proxy
+
+
 ### Plus! Jenkins file to compile the app
 ```
 pipeline {
