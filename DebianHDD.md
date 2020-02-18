@@ -2,7 +2,7 @@
 
 https://wiki.debian.org/LVM
 
-####To create a volume 
+#### To create a volume 
 
 ```
 root@host01:/home/nardison# /sbin/vgs
@@ -27,7 +27,7 @@ sdb                              8:16   0 931.5G  0 disk
 
 ```
 
-Format the volume with ext4
+#### Format the volume with ext4
 ```
 root@host01:/home/nardison# /sbin/mkfs.ext4 /dev/mapper/host01--vg-virtualmachines
 mke2fs 1.44.5 (15-Dec-2018)
@@ -41,6 +41,12 @@ Allocating group tables: done
 Writing inode tables: done
 Creating journal (262144 blocks): done
 Writing superblocks and filesystem accounting information: done
+```
+
+#### Mounting the volume
+```
+root@host01:/opt# echo "/dev/mapper/host01--vg-virtualmachines /opt/virtualmachines            ext4    defaults        0       0" >> /etc/fstab
+root@host01:/opt# mount /opt/virtualmachines
 ```
 
 
