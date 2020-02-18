@@ -27,6 +27,22 @@ sdb                              8:16   0 931.5G  0 disk
 
 ```
 
+Format the volume with ext4
+```
+root@host01:/home/nardison# /sbin/mkfs.ext4 /dev/mapper/host01--vg-virtualmachines
+mke2fs 1.44.5 (15-Dec-2018)
+Creating filesystem with 78643200 4k blocks and 19660800 inodes
+Filesystem UUID: faac267a-1759-4be6-a345-eb25478f4774
+Superblock backups stored on blocks:
+        32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
+        4096000, 7962624, 11239424, 20480000, 23887872, 71663616
+
+Allocating group tables: done
+Writing inode tables: done
+Creating journal (262144 blocks): done
+Writing superblocks and filesystem accounting information: done
+```
+
 
 ### Raid
 
