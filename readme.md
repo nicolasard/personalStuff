@@ -13,6 +13,7 @@ I started to document in some MarkDown pages my knowledge so it can go fast to w
  8. [Jenkins](https://github.com/nicolasard/personalStuff/blob/master/jenkins.md) 
  9. [SonarQube](https://github.com/nicolasard/personalStuff/blob/master/sonarqube.md) 
  10. [Debian LVM and RAID](https://github.com/nicolasard/personalStuff/blob/master/DebianHDD.md) 
+ 11. [Jira](https://github.com/nicolasard/personalStuff/blob/master/Jira.md) 
 
 ### Initial guide for developers
 This pretends to be a personal guide about how to set up a new development environment. I think that for these things it's cool to don't use auto-installers.
