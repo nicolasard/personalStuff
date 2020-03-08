@@ -6,6 +6,9 @@ import json
 import urllib2
 import base64
 import datetime
+import sys
+import locale
+locale.setlocale(locale.LC_NUMERIC, "")
 
 jiras_tasks = ['TASK-30611','STORY-10018']
 
@@ -44,7 +47,7 @@ for task in jiras_tasks:
     tasks.append(task)
 
 #### Print at console the calendar
-table_lines[]
+table_lines = []
 
 # Make the table head
 start_date = datetime.date(2020,3, 3)
@@ -58,12 +61,47 @@ while start_date <= end_date:
 table_lines.append(line)
 
 # Add the table values
-line = []
 for task in tasks:
-    line.append(task.key)
+    line = ['']*(len(table_lines[0]))
+    line[0] = task.key
     for worklog in task.worklogs:
-        print "Date: " + worklog.date.strftime("%m/%d/%Y")
-        print "Time Spend: " + str(worklog.time_spend/3600) + " hours"
-        for tittle_date in table_lines[0]:
-            if tittle_date == worklog.date.strftime("%m/%d/%Y")
+        for i in range (0, len(table_lines[0])):
+            if table_lines[0][i] == worklog.date.strftime("%Y/%m/%d"):
+                line[i] = str(worklog.time_spend / 3600) + ' h'
+    table_lines.append(line)
+
+def format_num(num):
+    """Format a number according to given places.
+    Adds commas, etc. Will truncate floats into ints!"""
+
+    try:
+        inum = int(num)
+        return locale.format("%.*f", (0, inum), True)
+
+    except (ValueError, TypeError):
+        return str(num)
+
+def get_max_width(table, index):
+    """Get the maximum width of the given column index"""
+    return max([len(format_num(row[index])) for row in table])
+
+def pprint_table(out, table):
+    col_paddings = []
+
+    for i in range(len(table[0])):
+        col_paddings.append(get_max_width(table, i))
+
+    for row in table:
+        # left col
+        print >> out, row[0].ljust(col_paddings[0] + 1),
+        # rest of the cols
+        for i in range(1, len(row)):
+            col = format_num(row[i]).rjust(col_paddings[i] + 2)
+            print >> out, col,
+        print >> out
+
+out = sys.stdout
+pprint_table(out,table_lines)
+
+
 
