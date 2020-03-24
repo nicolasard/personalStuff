@@ -60,6 +60,11 @@ https://docs.influxdata.com/kapacitor/v1.5/introduction/getting-started/
 We can push also push some of our applications data to the influxDB server. This can be made thanks to the **filebeat** and **logstash** applications
 
 #### About Filebeat
+Filebeat it's the application that reads the logs from and send them to Logstash.
 
 #### About Logstash
+Logstash have the concept of *"Pipelines"*. A pipeline has a input, it could have a filter, and it have an output.
+
+
+The most common filter that you can use in Logstash it's called Grok https://www.elastic.co/guide/en/logstash/7.6/plugins-filters-grok.html
 
