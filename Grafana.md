@@ -5,9 +5,7 @@ Ass you know I love install standalone applications, so this will be my guid abo
 
 *Environment:* Virtualiced Debian Linux
 
-1. Download Grafana binaries from https://grafana.com/grafana/download
-
-2. 
+Take in consideration that this guide as you see in the following chart have many components.
 
 ![Schema of grafana components](https://github.com/nicolasard/personalStuff/blob/master/GrafanaArquitecture.png)
 
@@ -57,4 +55,11 @@ Telefraf takes the config from a file in
 
 https://docs.influxdata.com/kapacitor/v1.5/introduction/getting-started/
 
+
+### Parsing text log data to influxDB.
+We can push also push some of our applications data to the influxDB server. This can be made thanks to the **filebeat** and **logstash** applications
+
+#### About Filebeat
+
+#### About Logstash
 
