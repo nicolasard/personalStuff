@@ -5,7 +5,7 @@ At my last work we used TimeShields plugin to save workload. But at my actual wo
 
 So because of this limitation in big companies to install plugins I started to play with Jira API to create a simple console application almost to see the workload in of a fixed list of tasks.
 
-And this console application it's  [Ji.py](https://github.com/nicolasard/personalStuff/blob/master/Ji.py)
+So the result it's this application [Ji.py](https://github.com/nicolasard/personalStuff/blob/master/Ji.py)
 
 To run it just do
 
