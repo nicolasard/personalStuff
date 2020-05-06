@@ -47,6 +47,19 @@ salt-minion-B:
 ```
 
 #### Adding salt minion in salt master
+Change the config file /etc/salt/minion at the minion.
+
+Then in the salt master run the following command to check that the minion it's trying to connect to the master
+```shell
+root@host01:/srv# salt-key -L
+Accepted Keys:
+host01
+Denied Keys:
+Unaccepted Keys:
+debian-s-1vcpu-1gb-nyc3-01.localdomain
+Rejected Keys:
+```
+To accept the minion key run `salt-key  -a debian-s-1vcpu-1gb-nyc3-01.localdomain`
 
 ### Targeting minions
 The simplest example it's target all the minions, for example for get all the grains
