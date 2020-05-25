@@ -6,6 +6,8 @@ So for example if you have to install an apache in your new server. First instal
 ### Installing Salt Master (aka server side)
 In debian just apt-get install salt-master https://docs.saltstack.com/en/latest/topics/installation/debian.html#install-packages
 
+(!) First is nice to add the official Salt repository to our package manager https://repo.saltstack.com/ 
+
 ### Installing Salt minions (aka client side)
 Also I nstalled in salt minion using apt-get install salt-minion.
 
