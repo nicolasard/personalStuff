@@ -85,6 +85,39 @@ tmpfs                                   3.9G     0  3.9G   0% /sys/fs/cgroup
 tmpfs                                   790M  7.7M  782M   1% /run/user/1000
 /dev/mapper/host01--vg-virtualmachines  295G  120G  160G  43% /opt/virtualmachines
 ```
+#### Create a partition table in the new disk 
+
+```
+root@host01:/sbin# ./fdisk /dev/sdb
+
+Welcome to fdisk (util-linux 2.33.1).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+Device does not contain a recognized partition table.
+Created a new DOS disklabel with disk identifier 0xc5560150.
+
+Command (m for help): n
+Partition type
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended (container for logical partitions)
+Select (default p): p
+Partition number (1-4, default 1): 1
+First sector (2048-1953525167, default 2048):
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-1953525167, default 1953525167):
+
+Created a new partition 1 of type 'Linux' and of size 931.5 GiB.
+
+Command (m for help): t
+Selected partition 1
+Hex code (type L to list all codes): 8e
+Changed type of partition 'Linux' to 'Linux LVM'.
+
+Command (m for help): w
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+```
 
 ### Raid
 
