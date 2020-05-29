@@ -2,6 +2,8 @@
 
 https://wiki.debian.org/LVM
 
+### How to create a volume and mount it in a mounting point
+
 #### To create a volume 
 
 ```
@@ -48,6 +50,10 @@ Writing superblocks and filesystem accounting information: done
 root@host01:/opt# echo "/dev/mapper/host01--vg-virtualmachines /opt/virtualmachines            ext4    defaults        0       0" >> /etc/fstab
 root@host01:/opt# mount /opt/virtualmachines
 ```
+
+### How to expand a volume
+
+
 
 
 ### Raid
