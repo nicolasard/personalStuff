@@ -143,6 +143,40 @@ root@host01:/sbin# ./pvcreate /dev/sdb1
   Physical volume "/dev/sdb1" successfully created.
 ```
 
+#### Extend the volume group
+```
+root@host01:/sbin# ./vgextend host01-vg /dev/sdb1
+  Volume group "host01-vg" successfully extended
+```
+#### Extend the logical volume
+```
+root@host01:/sbin# ./lvresize -l +20%free /dev/host01-vg/home
+  Size of logical volume host01-vg/home changed from 143.89 GiB (36836 extents) to <379.20 GiB (97074 extents).
+  Logical volume host01-vg/home successfully resized.
+root@host01:/sbin# ./resize2fs /dev/host01-vg/home
+resize2fs 1.44.5 (15-Dec-2018)
+Filesystem at /dev/host01-vg/home is mounted on /home; on-line resizing required
+old_desc_blocks = 18, new_desc_blocks = 48
+The filesystem on /dev/host01-vg/home is now 99403776 (4k) blocks long.
+```
+
+#### Check new size of the filesystem
+```
+root@host01:/sbin# df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+udev                                    3.9G     0  3.9G   0% /dev
+tmpfs                                   790M   50M  740M   7% /run
+/dev/mapper/host01--vg-root              23G  4.4G   18G  20% /
+tmpfs                                   3.9G  9.0M  3.9G   1% /dev/shm
+tmpfs                                   5.0M  8.0K  5.0M   1% /run/lock
+tmpfs                                   3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/sda1                               236M   58M  166M  26% /boot
+/dev/mapper/host01--vg-var              9.2G  1.2G  7.5G  14% /var
+/dev/mapper/host01--vg-tmp              1.8G  6.3M  1.7G   1% /tmp
+/dev/mapper/host01--vg-home             373G  115G  241G  33% /home
+tmpfs                                   790M  7.7M  782M   1% /run/user/1000
+/dev/mapper/host01--vg-virtualmachines  295G  120G  160G  43% /opt/virtualmachines
+```
 
 ### Raid
 
