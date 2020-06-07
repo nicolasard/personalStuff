@@ -11,7 +11,7 @@ In debian just apt-get install salt-master https://docs.saltstack.com/en/latest/
 ### Installing Salt minions (aka client side)
 Also I nstalled in salt minion using apt-get install salt-minion.
 
-### Configuring the Salt minion
+### Configuring the Salt minion (classic way)
 Reading the Salt official configurartion about how to configure Salt https://docs.saltstack.com/en/latest/ref/configuration/index.html#configuring-salt
 
 It's a good idea to configure the minion with custom grains in the minions so we can filter them
@@ -47,6 +47,9 @@ salt-minion-B:
     - influxdb
 
 ```
+### Configuring the Salt minion (Using saltify)
+
+https://docs.saltstack.com/en/master/topics/cloud/saltify.html
 
 #### Adding salt minion in salt master
 Change the config file /etc/salt/minion at the minion.
