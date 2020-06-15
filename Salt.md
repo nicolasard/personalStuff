@@ -1,7 +1,7 @@
 
 ## Salt
 Salt it's a server-client application that allow sys admin run commands in multiple servers at once, and create custom scripts to run commands in the servers.
-So for example if you have to install an apache in your new server. First install the Salt client (aka minion) and then from master run the script you had already made to install an apache server automactly 
+So for example if you have to install an apache in your new server. First install the Salt client (aka minion) and then from master run the script you had already made to install an apache server automatically. 
 
 ### Installing Salt Master (aka server side)
 In debian just apt-get install salt-master https://docs.saltstack.com/en/latest/topics/installation/debian.html#install-packages
@@ -9,7 +9,7 @@ In debian just apt-get install salt-master https://docs.saltstack.com/en/latest/
 (!) First is nice to add the official Salt repository to our package manager https://repo.saltstack.com/ 
 
 ### Installing Salt minions (aka client side)
-Also I nstalled in salt minion using apt-get install salt-minion.
+Also I nstalled in salt minion using `apt-get install salt-minion`.
 
 ### Configuring the Salt minion (classic way)
 Reading the Salt official configurartion about how to configure Salt https://docs.saltstack.com/en/latest/ref/configuration/index.html#configuring-salt
@@ -48,7 +48,7 @@ salt-minion-B:
 
 ```
 ### Configuring the Salt minion (Using saltify)
-
+I didn't went deeper into saltify but it's like a tool to automate the salt-minion installation.
 https://docs.saltstack.com/en/master/topics/cloud/saltify.html
 
 #### Adding salt minion in salt master
@@ -86,6 +86,9 @@ salt-minion:
 
 #### Writting state .sls
 State modules are located in /srv/salt/
+
+#### Important to know 
+Salt Stack uses Python, literally all when you do `salt '*' cmd.run 'hostname'` for example, you are running a Python script that runs the hostname command in the console. So is important to know what Python version it's using  salt. And just to general knowledge, where are located the Python scripts.
 
 
 
