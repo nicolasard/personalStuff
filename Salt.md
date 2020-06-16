@@ -90,6 +90,7 @@ State modules are located in /srv/salt/
 #### Important to know 
 Salt Stack uses Python, literally all when you do `salt '*' cmd.run 'hostname'` for example, you are running a Python script that runs the hostname command in the console. So is important to know what Python version it's using  salt. And just to general knowledge, where are located the Python scripts.
 
+To know the python modules installed and the Python version used run the following commmand
 
-
+salt '*' cmd.run 'salt-call --versions-report'
 
