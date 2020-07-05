@@ -1,4 +1,4 @@
-## Playing with Kubernates and Docker
+## Playing with Kubernetes and Docker
 
 First of all you need to understand some architecture of Kubernetes.
 
