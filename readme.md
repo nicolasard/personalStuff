@@ -6,7 +6,7 @@ I started to document in some MarkDown pages my knowledge so it can go fast to w
  1. [ReactJs](https://github.com/nicolasard/personalStuff/blob/master/reactJs.md)
  2. [Grafana](https://github.com/nicolasard/personalStuff/blob/master/Grafana.md)
  3. [Salt](https://github.com/nicolasard/personalStuff/blob/master/Salt.md)
- 4. [Kubernates](https://github.com/nicolasard/personalStuff/blob/master/Kubernates.md) 
+ 4. [Kubernetes](https://github.com/nicolasard/personalStuff/blob/master/Kubernetes.md) 
  5. [Apache2](https://github.com/nicolasard/personalStuff/blob/master/apache2.md) 
  6. [GIT](https://github.com/nicolasard/personalStuff/blob/master/git.md) 
  7. [VirtualBox](https://github.com/nicolasard/personalStuff/blob/master/virtualbox.md) 
