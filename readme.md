@@ -15,6 +15,8 @@ I started to document in some MarkDown pages my knowledge so it can go fast to w
  10. [Debian LVM and RAID](https://github.com/nicolasard/personalStuff/blob/master/DebianHDD.md) 
  11. [Jira](https://github.com/nicolasard/personalStuff/blob/master/Jira.md) 
 
+Thansk to GitHub pages this is now accessible from https://nicolasard.github.io/personalStuff/, There are some icons and tables don't look as the markdown in the GitHub repo. I hope this is something I can fix, and not something GitHub didn't considered before.
+
 ### Initial guide for developers
 This pretends to be a personal guide about how to set up a new development environment. I think that for these things it's cool to don't use auto-installers.
 
