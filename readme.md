@@ -33,7 +33,7 @@ Don't use installers if you can. (This it's going to help you if you don't have 
 | Maven    | Package manager for java                                                          |
 | Gradle   | A new package manager for java                                                    |
 | MobaXTerm | A very good tool for windows local console, and ssh client |
-
+{: .tablelines}
 
 ### Download the tools and setup the environment.
 I use to download all the software in **C:\E\tools\** but you can download the binaries wherever you want.
