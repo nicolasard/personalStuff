@@ -36,7 +36,9 @@ You can test the config syntax running
 /apache2/bin/apachectl configtest
 ```
 
-#### Using apache as a proxy with load balancer
+#### mod_proxy: Using apache as a proxy with load balancer
+It's pretty common that some times you need to configure apache in front of your app to do balancer.
+
 
 
 ### Plus! Jenkins file to compile the app
@@ -68,3 +70,5 @@ pipeline {
     }
 }
 ```
+
+
