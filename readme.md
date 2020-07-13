@@ -26,7 +26,7 @@ This pretends to be a personal guide about how to set up a new development envir
 
 Don't use installers if you can. (This it's going to help you if you don't have admin/root privileges on your computer. )
 
-#### Brief of the software i use:
+#### Brief of the software I use:
 | Application/Tool | Description |
 | --- | --- |
 | Java JDK | Lastly i'm developing in java 1.8 but this guide could apply to whatever version. |
