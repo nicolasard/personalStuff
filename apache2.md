@@ -39,7 +39,8 @@ You can test the config syntax running
 #### mod_proxy: Using apache as a proxy with load balancer
 It's pretty common that some times you need to configure apache in front of your app to do balancer.
 
-
+#### KeepAlive
+KeepAlive allows clients to re-use the same channel in each request. (https://httpd.apache.org/docs/2.4/es/mod/core.html#keepalive)
 
 ### Plus! Jenkins file to compile the app
 ```
