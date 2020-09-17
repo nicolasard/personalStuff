@@ -1,5 +1,7 @@
 ## Shellscripting
-A collection of the most used shellscripting tricks. 
+A collection of the most used shellscripting tricks.
+
+wc -l file.txt counts the number of lines
 
 #### Delete old files of a folder
 Useful when you want to free old data/logs.
