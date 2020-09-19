@@ -42,6 +42,11 @@ It's pretty common that some times you need to configure apache in front of your
 #### KeepAlive
 KeepAlive allows clients to re-use the same channel in each request. (https://httpd.apache.org/docs/2.4/es/mod/core.html#keepalive)
 
+#### Testing some apache behavoirs with Curl
+Of course to test a webserver there is nothing like a web browser. Or use curl (https://curl.haxx.se/) that tool that some http clients based in.
+
+*Example 1*: Running multiple queries in the same connection to check how the keeaplive is working.
+
 ### Plus! Jenkins file to compile the app
 ```
 pipeline {
