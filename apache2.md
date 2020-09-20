@@ -58,6 +58,8 @@ Of course to test a webserver there is nothing like a web browser. Or use curl (
 
 *Example 1*: Running multiple queries in the same connection to check how the keeaplive is working.
 
+`curl -k --trace trace.txt https://httpstat.us/200 https://httpstat.us/200 https://httpstat.us/500 https://httpstat.us/200`
+
 ### Plus! Jenkins file to compile the app
 ```
 pipeline {
