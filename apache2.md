@@ -36,8 +36,18 @@ You can test the config syntax running
 /apache2/bin/apachectl configtest
 ```
 
-#### mod_proxy: Using apache as a proxy with load balancer
+#### mod_proxy: Using when you want to use apache as proxy between your users and the application server.
+
 It's pretty common that some times you need to configure apache in front of your app to do balancer. (https://httpd.apache.org/docs/trunk/en/howto/reverse_proxy.html)
+
+```
+	ProxyPass "/status-sim/" "http://167.71.57.12/"
+	ProxyPassReverse "/" "http://167.71.57.12/"
+```
+
+Above example will send all the traffic from our clients that goes to `/status-sim/` to `/` in the app host `167.71.57.12`
+
+### mod_proxy + balancer
 
 #### KeepAlive
 KeepAlive allows clients to re-use the same channel in each request. (https://httpd.apache.org/docs/2.4/es/mod/core.html#keepalive)
