@@ -5,6 +5,8 @@ I use VirtualBox as the free solution to my personal VPS servers. I have a bare 
 This it's a very good article I found.
 https://blog.scottlowe.org/2016/11/10/intro-to-vbox-cli/
 
+(!) You will need to have some X engine in place (gnome,kde,etc) to run Virtual box.
+
 ### Remote managing of your Virtual Box server
 
 Clone the lastest version of https://github.com/phpvirtualbox/phpvirtualbox running this interface is easy as running a php application you only need to modify the configure.php file.
