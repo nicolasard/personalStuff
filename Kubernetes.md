@@ -17,3 +17,15 @@ Once we have a VM running, we need to download the kubernates binaries from http
 kubeadm it's a tool that help you initializate a cluster. If you automatizate the initialization as some of my collegues using salt, you won't need to use it. But it's interesting to first play with and check the files this tools creates. After this you can play with whatever tool you know to automate a cluster installation.
 
 kubeadm init
+
+## Creating images and deploy them
+
+### Helm
+
+Helm is a tool that allows you to deploy easily applications in kubernetes
+
+#### Getting started with Helm
+
+helm create https://helm.sh/docs/helm/helm_create/ allows you to create a new project structure.
+
+
