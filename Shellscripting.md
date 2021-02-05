@@ -19,6 +19,9 @@ function_name(){
  function_name hello world
 ```
 
+#### Find a file in a folder
+find ./ -name filename.txt
+
 ## Forensic Analysis
 uptime - Get server uptime.
 last - Get who was login into the system.
