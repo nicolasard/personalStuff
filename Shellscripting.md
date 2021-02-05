@@ -1,7 +1,9 @@
 ## Shellscripting
 A collection of the most used shellscripting tricks.
 
+```bash
 wc -l file.txt counts the number of lines
+```
 
 #### Delete old files of a folder
 Useful when you want to free old data/logs.
@@ -20,7 +22,9 @@ function_name(){
 ```
 
 #### Find a file in a folder
+```bash
 find ./ -name filename.txt
+```
 
 ## Forensic Analysis
 uptime - Get server uptime.
