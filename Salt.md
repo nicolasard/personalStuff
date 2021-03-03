@@ -85,7 +85,14 @@ salt-minion:
 ```
 
 #### Writting state .sls
-State modules are located in /srv/salt/
+State modules are located in /srv/salt/ and the core of salt stack. 
+
+```shell
+apache:                 # ID declaration
+  pkg:                  # state declaration
+    - installed         # function declaration
+```
+Salt states are created like this, with an arbitrary ID, the state declaration and the function to apply.
 
 #### Important to know 
 Salt Stack uses Python, literally all when you do `salt '*' cmd.run 'hostname'` for example, you are running a Python script that runs the hostname command in the console. So is important to know what Python version it's using  salt. And just to general knowledge, where are located the Python scripts.
