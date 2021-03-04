@@ -138,3 +138,6 @@ Logstash have the concept of *"Pipelines"*. A pipeline has a input, it could hav
 
 The most common filter that you can use in Logstash it's called Grok https://www.elastic.co/guide/en/logstash/7.6/plugins-filters-grok.html
 
+#### Grafana
+Grafana is pretty intuitive to create dashboards, and one pretty feature is that you can create the dashboards, export them as json and load them when programatically. Also you can configure the datasources (https://grafana.com/docs/grafana/latest/administration/provisioning/) 
+
