@@ -1,7 +1,13 @@
-#### Kapacitor
-"Kapacitor is an open source data processing framework that makes it easy to create alerts, run ETL jobs and detect anomalies. Kapacitor is the final piece of the TICK stack." from https://docs.influxdata.com/kapacitor/v1.5/
+#Kapacitor
+"Kapacitor is an open source data processing framework that makes it easy to create alerts, run ETL jobs and detect anomalies. Kapacitor is the final piece of the TICK stack." from https://docs.influxdata.com/kapacitor/v1.5/ also a good introduction can be found here https://youtu.be/lfNcYG0bMhU 
 
 https://docs.influxdata.com/kapacitor/v1.5/introduction/getting-started/
+
+Also it's interesting to checkout the repository https://github.com/influxdata/kapacitor
+
+Kapacitor have many integrations, SMTP (mailing), slack, telegram, pagerduty, etc. At my sandbox servers I'm using SMTP and the free acount of pagerduty that allows you up to 5 users oncall.
+
+Creating your tick script, the tick script is where you write the logic of your alert or ETL. It's composed of "Nodes" (https://docs.influxdata.com/kapacitor/v1.5/nodes/) that are joined via pipes (|). The first node is always batch or stream.
 
 To load a alert from a tick file
 ```
@@ -15,6 +21,9 @@ ID         Type      Status    Executing Databases and Retention Policies
 http-alert batch     enabled   true      ["telegraf"."autogen"]
 sf_task    batch     disabled  false     ["telegraf"."autogen"]
 ```
+
+To see how the 
+
 ```
 root@ln-moni01:/home/nardison# kapacitor show  http-alert
 ID: http-alert
