@@ -1,4 +1,5 @@
-#Kapacitor
+# Kapacitor
+
 "Kapacitor is an open source data processing framework that makes it easy to create alerts, run ETL jobs and detect anomalies. Kapacitor is the final piece of the TICK stack." from https://docs.influxdata.com/kapacitor/v1.5/ also a good introduction can be found here https://youtu.be/lfNcYG0bMhU 
 
 https://docs.influxdata.com/kapacitor/v1.5/introduction/getting-started/
