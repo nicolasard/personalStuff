@@ -137,3 +137,36 @@ name    duration  shardGroupDuration replicaN default
 ----    --------  ------------------ -------- -------
 autogen 4368h0m0s 168h0m0s           1        true
 ```
+
+#### Line Protocol (aka how to insert values in influxdb and create measurements)
+
+https://docs.influxdata.com/influxdb/v1.8/write_protocols/line_protocol_tutorial/
+
+```bash
+curl -i -XPOST "http://localhost:8086/write?db=science_is_cool" --data-binary 'weather,location=us-midwest temperature=82 1465839830100400200'
+```
+
+Taking advantaje that you can just doing a simple curl post to insert values, you can run an escript as the following to insert dummy data.
+
+```python
+# populate.py
+# Minimal example of how to insert data to influxdb
+
+import urllib2
+import time
+import random
+
+def writedummytemp(temp):
+    url = 'http://localhost:8086/write?db=dummydata'
+    data= 'weather,location=us-midwest temperature='+str(temp)
+    cont_len = len(data)
+    req = urllib2.Request(url, data, {'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': cont_len})
+    f = urllib2.urlopen(req)
+    response = f.read()
+    f.close()
+
+while True:
+    temp=20+random.randrange(10)
+    writedummytemp(temp)
+    time.sleep(5)
+```
