@@ -170,3 +170,6 @@ while True:
     writedummytemp(temp)
     time.sleep(5)
 ```
+
+### Data sampling 
+At https://docs.influxdata.com/kapacitor/v1.5/working/cli_client/#data-sampling we have a good documentation about datas-sampling, this will be useful to get a sample of data to test later an task.
