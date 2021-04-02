@@ -26,6 +26,11 @@ function_name(){
 find ./ -name filename.txt
 ```
 
+#### Run a command for ever very xx seconds
+```bash
+while true; do date; ps aux|grep ssh;sleep 5;done
+```
+
 ## Forensic Analysis
 uptime - Get server uptime.
 last - Get who was login into the system.
