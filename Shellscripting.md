@@ -8,6 +8,12 @@ wc -l file.txt counts the number of lines
 #### Delete old files of a folder
 Useful when you want to free old data/logs.
 
+#### Using alias 
+I use them to quick connect my ssh servers
+```bash
+alias ssh-prod-dc-app1-server1='ssh user@server1'
+```
+
 #### Shellscript functions
 ```bash
 #!/bin/bash
