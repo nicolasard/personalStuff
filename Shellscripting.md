@@ -43,3 +43,14 @@ last - Get who was login into the system.
 
 #### The history log
 You can cat the history log from cat ~/.bash_history
+
+
+#### Analize trafic with TCP 
+
+To dump everything from iface enp0s3
+```bash
+tcpdump -w dump.pcap -i enp0s3
+```
+
+
+
