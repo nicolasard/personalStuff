@@ -52,9 +52,9 @@ To dump everything from iface enp0s3
 tcpdump -w dump.pcap -i enp0s3
 ```
 
-To dump all comes and goes to an specific ip
+To dump all comes and goes to an specific ip. (Look that with the -i any we can listen all the interfaces)
 ```bash
-tcpdump -w dump.pcap host 1.1.1.1
+tcpdump -w dump.pcap -i any host 1.1.1.1
 ```
 
 The following comand save dump files of 10 mb, and rotate it in 5 files, so we as much we will have 10mb x 5 files of dump.
