@@ -45,7 +45,7 @@ last - Get who was login into the system.
 You can cat the history log from cat ~/.bash_history
 
 
-#### Analize trafic with TCP 
+#### Analize trafic with TcpDump 
 
 To dump everything from iface enp0s3
 ```bash
@@ -57,7 +57,7 @@ To dump all comes and goes to an specific ip. (Look that with the -i any we can 
 tcpdump -w dump.pcap -i any host 1.1.1.1
 ```
 
-The following comand save dump files of 10 mb, and rotate it in 5 files, so we as much we will have 10mb x 5 files of dump.
+The following comand save dump files of 10 mb, and rotate it in 5 files, so we will have as much 10mb x 5 files of dump.
 ```bash
 tcpdump -W 5 -C 10 -w capfile
 ```
