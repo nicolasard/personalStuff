@@ -109,6 +109,13 @@ If you want to check just the differences
 salt --state-output=changes  server1 state.sls <your-salt-state> test=True
 ```
 
+You can put `salt --state-output=changes` in a alias if you want to don't think about how the output will be formated
+
+```shell
+alias salt=salt --state-output=changes
+salt server1 state.sls <your-salt-state> test=True
+```
+
 #### Important to know 
 Salt Stack uses Python, literally all when you do `salt '*' cmd.run 'hostname'` for example, you are running a Python script that runs the hostname command in the console. So is important to know what Python version it's using  salt. And just to general knowledge, where are located the Python scripts.
 
