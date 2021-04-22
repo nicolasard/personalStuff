@@ -101,7 +101,7 @@ If you want to apply salt states
 salt  server1 state.sls <your-salt-state> test=True
 ```
 
-with the test=True you just run a test (aka run in drain mode)
+with the test=True you just run a test (aka run in drain mode), remove it if you actually want's to apply the change.
 
 If you want to check just the differences 
 
