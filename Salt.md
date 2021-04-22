@@ -94,6 +94,21 @@ apache:                 # ID declaration
 ```
 Salt states are created like this, with an arbitrary ID, the state declaration and the function to apply.
 
+#### Apply a Salt state
+If you want to apply salt states 
+
+```shell
+salt  server1 state.sls <your-salt-state> test=True
+```
+
+with the test=True you just run a test (aka run in drain mode)
+
+If you want to check just the differences 
+
+```shell
+salt --state-output=changes  server1 state.sls <your-salt-state> test=True
+```
+
 #### Important to know 
 Salt Stack uses Python, literally all when you do `salt '*' cmd.run 'hostname'` for example, you are running a Python script that runs the hostname command in the console. So is important to know what Python version it's using  salt. And just to general knowledge, where are located the Python scripts.
 
