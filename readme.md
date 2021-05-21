@@ -19,6 +19,7 @@ I started to document in some MarkDown pages my knowledge so it can go fast to w
  14. [SpringBatch](https://github.com/nicolasard/personalStuff/blob/master/SpringBatch.md) 
  15. [GitHub](https://github.com/nicolasard/personalStuff/blob/master/GitHub.md) 
  16. [ShellScripting](https://github.com/nicolasard/personalStuff/blob/master/Shellscripting.md) 
+ 17. [ApacheKafka](https://github.com/nicolasard/personalStuff/blob/master/ApacheKafka.md) 
 
 Thansk to GitHub pages this is now accessible from https://nicolasard.github.io/personalStuff/, There are some icons and tables don't look as the markdown in the GitHub repo. I hope this is something I can fix, and not something GitHub didn't considered before.
 
