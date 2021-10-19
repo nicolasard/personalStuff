@@ -69,6 +69,13 @@ Get .pem certificate info
  openssl.exe x509 -in cert.pem -noout -text
  ```
  
+ 
+Get public key from .pem certificate
+```bash
+ openssl x509 -pubkey -noout -in Cert.pem
+ ```
+
+ 
 
 
 
