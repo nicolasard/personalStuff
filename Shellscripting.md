@@ -62,6 +62,13 @@ The following comand save dump files of 10 mb, and rotate it in 5 files, so we w
 tcpdump -W 5 -C 10 -w capfile
 ```
 
+#### OpenSSL
+
+Get .pem certificate info 
+```bash
+ openssl.exe x509 -in cert.pem -noout -text
+ ```
+ 
 
 
 
