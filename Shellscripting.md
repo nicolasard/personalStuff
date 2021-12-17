@@ -74,6 +74,11 @@ Get public key from .pem certificate
 ```bash
  openssl x509 -pubkey -noout -in Cert.pem
  ```
+ 
+ Generate selfsigned cert and private key
+ ```bash
+ openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 365
+ ```
 
  
 
