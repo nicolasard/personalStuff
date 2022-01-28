@@ -80,7 +80,10 @@ Get public key from .pem certificate
  openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 365
  ```
 
- 
+ Try to connect to a host using MTLS
+  ```bash
+openssl s_client -connect <host>:<port> -cert <client_cert>.pem -key <client_cert_key>.key -showcerts -cert_chain <client_cert_chain>.pem
+```
 
 
 
