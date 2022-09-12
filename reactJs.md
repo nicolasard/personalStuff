@@ -17,7 +17,7 @@ SET PATH=%REACT%;%PATH%
 
 #### Create a blank project and start it just to test
 ```bash
-npx create-react-app my-app
+npx create-react-app my-app --template typescript
 cd my-app
 npm start
 ```
