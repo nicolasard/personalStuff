@@ -21,3 +21,9 @@ npx create-react-app my-app --template typescript
 cd my-app
 npm start
 ```
+
+
+#### Autogenerate a rest client using OpenAPI contract
+```bash
+npm install @openapitools/openapi-generator-cli
+```
