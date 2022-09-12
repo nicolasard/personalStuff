@@ -26,4 +26,5 @@ npm start
 #### Autogenerate a rest client using OpenAPI contract
 ```bash
 npm install @openapitools/openapi-generator-cli
+npx openapi-generator-cli generate -i http://localhost:8080/v3/api-docs -g typescript-axios  -o ./generated-api-client
 ```
