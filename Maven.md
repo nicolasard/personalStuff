@@ -1,5 +1,5 @@
 ### Maven
-This is my personal quick guide of how to use maven.
+This is my personal quick guide of how to use maven and what are my favourites plugin you can use.
 
 #### Profiles 
 https://maven.apache.org/guides/introduction/introduction-to-profiles.html
@@ -8,7 +8,7 @@ https://maven.apache.org/guides/introduction/introduction-to-profiles.html
 https://maven.apache.org/pom.html#properties
 
 #### Spotless Plugin
-This is a nice plugin to keep the code writen folloing the same conventions. You can find the doc here.
+This is a nice plugin to keep the code writen folloing the same code style (format) conventions. You can find the doc here.
 
 This is a nice plugin config for your pom.xml
 
@@ -52,10 +52,9 @@ This is a nice plugin config for your pom.xml
   </plugin>
 ```
 
-#### CheckStyle Plugin
-A good plugin for MVN to check the java code style.
-
-https://maven.apache.org/plugins/maven-checkstyle-plugin/
+#### Check dependency tree
+This command will show the dependency tree for the project
+```mvn dependency:tree ```
 
 
 #### SQL-Scripts versioning with "Flyway DB"
