@@ -11,3 +11,7 @@ This is better explained at https://docs.docker.com/compose/reference/overview/
 Create a docker-compose.yml file.
 
 Run the command ```docker-compose up``` (this will read a file named docker-compose.yml from the dir where you run the command). Additionally you can select your custom .yml file name with ```docker-compose -f custon-name.yml up```
+
+## To run a container with an image and debug doing ssh 
+
+This command is really usefull when you want to start an image and do SSH inside and check the stuff you have there.  ```docker run -it --entrypoint=/bin/bash <image-id>```
