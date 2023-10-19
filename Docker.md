@@ -4,7 +4,7 @@ To start working with docker try by installing docker for windows. I have window
 
 You should have a Dockerfile in your folder and run something like this.
 
-```docker build```
+```docker build .```
 
 ## To run a container with docker-compose
 
